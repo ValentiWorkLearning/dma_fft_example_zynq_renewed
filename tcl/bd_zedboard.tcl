@@ -250,7 +250,7 @@ proc create_hier_cell_accelerator { parentCell nameHier } {
   create_bd_pin -dir I s_axis_config_tvalid
 
   # Create instance: xfft_0, and set properties
-  set xfft_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xfft:9.0 xfft_0 ]
+  set xfft_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xfft:9.1 xfft_0 ]
   set_property -dict [ list CONFIG.implementation_options {pipelined_streaming_io} CONFIG.output_ordering {natural_order} CONFIG.run_time_configurable_transform_length {true} CONFIG.target_clock_frequency {100} CONFIG.target_data_throughput {50} CONFIG.throttle_scheme {nonrealtime} CONFIG.transform_length {16384}  ] $xfft_0
 
   # Create interface connections
