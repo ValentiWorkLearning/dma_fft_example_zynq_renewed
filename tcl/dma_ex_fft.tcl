@@ -37,7 +37,7 @@ if { [file exists "../proj/$design_name_full"] == 1 } {
 puts "Creating project for $design_name_full..."
 if { $target_board == "zedboard" } {
 	set target_part xc7z020clg484-1
-	set board_property em.avnet.com:zed:part0:1.4
+	set board_property avnet.com:zedboard:part0:1.4
 } elseif { $target_board == "zc702" } {
 	set target_part xc7z020clg484-1
 	set board_property xilinx.com:zc702:part0:1.2
