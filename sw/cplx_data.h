@@ -28,8 +28,8 @@
 
 typedef struct cplx_data
 {
-	short data_re;
-	short data_im;
+	float data_re;
+	float data_im;
 } cplx_data_t;
 
 // Public functions

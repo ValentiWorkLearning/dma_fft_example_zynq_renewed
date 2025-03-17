@@ -232,7 +232,7 @@ void fft_print_stim_buf(fft_t* p_fft_inst)
 
 	// Local variables
 	int          ii = 0;
-	char         str[25]; // Large enough to hold 2 ints plus extra characters
+	char         str[256]; // Large enough to hold 2 ints plus extra characters
 	cplx_data_t* tmp;
 
 	tmp = (cplx_data_t*)dma_accel_get_stim_buf(p_fft_inst->periphs.p_dma_accel_inst);
@@ -250,7 +250,7 @@ void fft_print_result_buf(fft_t* p_fft_inst)
 
 	// Local variables
 	int          ii = 0;
-	char         str[25]; // Large enough to hold 2 ints plus extra characters
+	char         str[256]; // Large enough to hold 2 ints plus extra characters
 	cplx_data_t* tmp;
 
 	tmp = (cplx_data_t*)dma_accel_get_result_buf(p_fft_inst->periphs.p_dma_accel_inst);

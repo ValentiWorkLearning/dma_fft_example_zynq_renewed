@@ -35,7 +35,7 @@
 #include "stim.h"
 
 // External data
-extern int sig_two_sine_waves[FFT_MAX_NUM_PTS]; // FFT input data
+extern float sig_two_sine_waves[FFT_MAX_NUM_PTS]; // FFT input data
 
 // Function prototypes
 void which_fft_param(fft_t* p_fft_inst);
@@ -252,7 +252,7 @@ void which_fft_param(fft_t* p_fft_inst)
 		}
 		else if (c == '1')
 		{
-			
+
 			xil_printf("What would you like to set the FFT direction to? Type:\n\r");
 			xil_printf("0: Inverse\n\r");
 			xil_printf("1: Forward\n\r");
